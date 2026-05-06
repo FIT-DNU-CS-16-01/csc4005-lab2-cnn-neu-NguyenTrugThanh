@@ -84,7 +84,7 @@ python -m src.train   --data_dir /duong_dan/NEU-CLS.zip   --project csc4005-lab2
 
 Muốn fine-tune cả backbone:
 ```bash
-python -m src.train   --data_dir /duong_dan/NEU-CLS.zip   --project csc4005-lab2-neu-cnn   --run_name resnet18_finetune   --model_name resnet18   --train_mode finetune   --optimizer adamw   --lr 0.0001   --weight_decay 0.0001   --dropout 0.3   --epochs 10   --batch_size 16   --img_size 128   --patience 3   --augment   --use_wandb
+python -m src.train   --data_dir NEU-CLS.zip   --project csc4005-lab2-neu-cnn   --run_name resnet18_finetune   --model_name resnet18   --train_mode finetune   --optimizer adamw   --lr 0.0001   --weight_decay 0.0001   --dropout 0.3   --epochs 10   --batch_size 16   --img_size 128   --patience 3   --augment   --use_wandb
 ```
 
 ## 7. Output sau khi train
